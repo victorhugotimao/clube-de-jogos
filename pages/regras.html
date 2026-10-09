@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <!-- Metadados básicos do documento -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EA FC GAMES - Regras</title>
+
+    <link rel="stylesheet" href="../css/estilo.css">
+</head>
+<body>
+
+    <!-- CABEÇALHO: presente em todas as páginas do site -->
+    <header>
+        <h1><span class="logo-icon" aria-hidden="true">🎮</span> EA FC GAMES</h1>
+        <p>Timao FC · resenha, raça e Pro Clubs</p>
+
+        <!-- BOTÃO HAMBÚRGUER: só aparece em telas pequenas (ver CSS).
+             aria-expanded é atualizado pelo JS para leitores de tela. -->
+        <button type="button" class="nav-toggle" id="nav-toggle"
+                aria-expanded="false" aria-controls="menu-principal">
+            <span class="nav-toggle-label">Menu</span>
+        </button>
+
+        <!-- MENU DE NAVEGAÇÃO: mesma estrutura em todas as páginas,
+             apenas os caminhos mudam conforme a profundidade da pasta -->
+        <nav>
+            <ul id="menu-principal">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="elenco.php">Elenco</a></li>
+                <li><a href="regras.html" aria-current="page">Regras</a></li>
+                <li><a href="calendario.html">Calendário</a></li>
+                <li><a href="resultados.html">Resultados</a></li>
+                <li><a href="conquistas.html">Conquistas</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contato.html">Cadastro</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- SECTION: regras gerais de conduta -->
+        <section>
+            <h2>Regras de Conduta</h2>
+
+            <div class="card-grid">
+                <article>
+                    <h3>1. Presença nos jogos oficiais</h3>
+                    <p>Confirme presença com pelo menos 2 horas de antecedência. Ninguém gosta de descobrir a escalação no grito.</p>
+                </article>
+
+                <article>
+                    <h3>2. Comunicação obrigatória</h3>
+                    <p>Microfone ligado durante Div Rivals e Champs. Quem não fala deixa o gol adversário falar.</p>
+                </article>
+
+                <article>
+                    <h3>3. Proibido rage quit</h3>
+                    <p>Rage quit não faz parte do Timao FC. Sair no meio da partida gera suspensão de uma rodada.</p>
+                </article>
+
+                <article>
+                    <h3>4. Respeito ao adversário</h3>
+                    <p>Comemore a vitória, mas respeite quem está do outro lado. Resenha boa não precisa humilhar.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- SECTION: regras táticas -->
+        <section>
+            <h2>Regras Táticas</h2>
+
+            <div class="card-grid">
+                <article>
+                    <h3>Posição fixa por temporada</h3>
+                    <p>Cada jogador mantém sua posição durante a temporada para o time ganhar entrosamento.</p>
+                </article>
+
+                <article>
+                    <h3>Revisão de replay</h3>
+                    <p>Derrota por 3 gols ou mais vira replay na quarta. A ideia é aprender, não procurar culpado.</p>
+                </article>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- RODAPÉ: presente em todas as páginas do site -->
+    <footer>
+        <p>&copy; <span id="ano-atual">2026</span> EA FC GAMES · Timao FC</p>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>

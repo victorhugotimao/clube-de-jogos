@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="EA FC GAMES apresenta o Timao FC: elenco, calendário e resultados do nosso Pro Clubs.">
+    <title>EA FC GAMES — Timao FC</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <!-- Cabeçalho: identidade do site e menu principal. -->
+    <header>
+        <h1><span class="logo-icon" aria-hidden="true">🎮</span> EA FC GAMES</h1>
+        <p>Timao FC · resenha, raça e Pro Clubs</p>
+        <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="menu-principal"><span class="nav-toggle-label">Menu</span></button>
+        <nav>
+            <ul id="menu-principal">
+                <li><a href="index.html" aria-current="page">Home</a></li>
+                <li><a href="pages/sobre.html">Sobre</a></li>
+                <li><a href="pages/elenco.php">Elenco</a></li>
+                <li><a href="pages/regras.html">Regras</a></li>
+                <li><a href="pages/calendario.html">Calendário</a></li>
+                <li><a href="pages/resultados.html">Resultados</a></li>
+                <li><a href="pages/conquistas.html">Conquistas</a></li>
+                <li><a href="pages/faq.html">FAQ</a></li>
+                <li><a href="pages/contato.html">Cadastro</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Conteúdo da página inicial, separado do estilo no arquivo CSS. -->
+    <main>
+        <!-- Hero: apresenta rapidamente o Timao FC e leva o visitante às áreas principais. -->
+        <section class="hero">
+            <div class="hero-copy">
+                <p class="eyebrow">Timao FC · Pro Clubs · EA FC 26</p>
+                <h2>Raça, resenha e bola na rede.</h2>
+                <p>O EA FC GAMES é a casa do Timao FC: um time para quem curte jogar sério, conversar besteira no grupo e comemorar cada acesso como se fosse final.</p>
+                <div class="hero-actions">
+                    <a class="btn-primary" href="pages/contato.html">Chegar no Timao</a>
+                    <a class="btn-ghost" href="pages/elenco.php">Ver o elenco</a>
+                </div>
+            </div>
+            <div class="hero-scoreboard" aria-label="Status do clube">
+                <div class="score-topline"><span>status do clube</span><strong>ao vivo</strong></div>
+                <div class="score-ring">03</div>
+                <p class="score-caption"><strong>Divisão atual</strong>O próximo acesso começa no próximo jogo.</p>
+            </div>
+        </section>
+
+        <section>
+            <div class="section-heading">
+                <div><p class="eyebrow">O clube em números</p><h2>Feito para competir</h2></div>
+                <a href="pages/resultados.html">Ver campanha →</a>
+            </div>
+            <div class="stats-grid">
+                <article class="stat-card"><span class="stat-number">03</span><span class="stat-label">Divisão atual</span></article>
+                <article class="stat-card"><span class="stat-number">LIVE</span><span class="stat-label">Elenco do Timao</span></article>
+                <article class="stat-card"><span class="stat-number">4–3–3</span><span class="stat-label">Formação base</span></article>
+                <article class="stat-card"><span class="stat-number">21H</span><span class="stat-label">Horário de jogo</span></article>
+            </div>
+        </section>
+
+        <section class="split-section">
+            <article class="feature-card"><div><span class="mini-label">Último capítulo</span><h3>O Timao subiu para a Divisão 3</h3><p>Cinco vitórias colocaram a gente em uma nova disputa. Agora é manter a cabeça no lugar e a bola no pé.</p></div><a href="pages/conquistas.html">Ver conquistas →</a></article>
+            <article class="feature-card"><div><span class="mini-label">Próxima sessão</span><h3>Treino tático · quarta-feira</h3><p>Saída de bola, pressão alta e aquele replay que ninguém queria rever. Chegue às 21h com o microfone pronto.</p></div><a href="pages/calendario.html">Abrir calendário →</a></article>
+        </section>
+    </main>
+
+    <footer><p>&copy; <span id="ano-atual">2026</span> EA FC GAMES · Timao FC</p></footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

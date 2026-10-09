@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EA FC GAMES — Cadastro</title>
+    <link rel="stylesheet" href="../css/estilo.css">
+</head>
+<body>
+    <header>
+        <h1><span class="logo-icon" aria-hidden="true">🎮</span> EA FC GAMES</h1>
+        <p>Timao FC · resenha, raça e Pro Clubs</p>
+        <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="menu-principal"><span class="nav-toggle-label">Menu</span></button>
+        <nav>
+            <ul id="menu-principal">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="elenco.php">Elenco</a></li>
+                <li><a href="regras.html">Regras</a></li>
+                <li><a href="calendario.html">Calendário</a></li>
+                <li><a href="resultados.html">Resultados</a></li>
+                <li><a href="conquistas.html">Conquistas</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contato.html" aria-current="page">Cadastro</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <p class="eyebrow">Timao FC · porta de entrada</p>
+            <h2>Coloque seu nome no time</h2>
+            <p>Tem espaço para quem joga junto e não some no segundo tempo. Cadastre seu jogador e cola com a gente.</p>
+
+            <!-- POST envia os dados ao PHP; enctype permite enviar a foto. -->
+            <form action="../php/jogadores_inscrever.php" method="post" enctype="multipart/form-data" data-player-form>
+                <label for="nome">Nome do jogador</label>
+                <input type="text" id="nome" name="nome" placeholder="Ex.: João Silva" maxlength="100" required>
+
+                <label for="posicao">Posição</label>
+                <select id="posicao" name="posicao" required>
+                    <option value="">Selecione a posição</option>
+                    <option value="GOL">Goleiro (GOL)</option>
+                    <option value="ZAG">Zagueiro (ZAG)</option>
+                    <option value="LE">Lateral esquerdo (LE)</option>
+                    <option value="LD">Lateral direito (LD)</option>
+                    <option value="VOL">Volante (VOL)</option>
+                    <option value="MEI">Meia (MEI)</option>
+                    <option value="PE">Ponta esquerda (PE)</option>
+                    <option value="PD">Ponta direita (PD)</option>
+                    <option value="ATA">Atacante (ATA)</option>
+                </select>
+
+                <label for="numero_camisa">Número da camisa</label>
+                <input type="number" id="numero_camisa" name="numero_camisa" min="1" max="99" placeholder="Ex.: 10" required>
+
+                <label for="foto">Foto do jogador</label>
+                <div class="file-field">
+                    <input type="file" id="foto" name="foto" accept="image/jpeg,image/png,image/webp,image/gif">
+                    <span class="file-hint">Opcional · JPG, PNG, WEBP ou GIF · até 5 MB</span>
+                </div>
+
+                <label class="full" for="descricao">Como você joga?</label>
+                <textarea class="full" id="descricao" name="descricao" maxlength="255" placeholder="Ex.: gosto de tocar rápido e recompor..."></textarea>
+
+                <div class="form-actions full">
+                    <button type="submit">Cadastrar no elenco</button>
+                    <a class="btn-ghost" href="elenco.php">Ver elenco</a>
+                </div>
+            </form>
+        </section>
+
+        <section class="split-section">
+            <article class="feature-card"><div><span class="mini-label">Conexão do clube</span><h3>Discord oficial</h3><p>O ponto de encontro para marcar jogo, combinar treino e descobrir quem ficou no vácuo.</p></div><span class="feature-value">21H</span></article>
+            <article class="feature-card"><div><span class="mini-label">Depois do cadastro</span><h3>Seu card aparece aqui</h3><p>Os dados ficam no banco e podem ser atualizados pelo painel do elenco.</p></div><a class="btn-ghost" href="../php/jogadores_listar.php">Abrir painel →</a></article>
+        </section>
+    </main>
+
+    <footer><p>&copy; <span id="ano-atual">2026</span> EA FC GAMES · Timao FC</p></footer>
+    <script src="../js/script.js"></script>
+</body>
+</html>
